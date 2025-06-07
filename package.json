@@ -34,10 +34,10 @@
   "homepage": "https://banner.d7y.dev",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mar-terminal/mbg-banner-generator.git"
+    "url": "git+https://github.com/omaralhami/Mar-Banner-Generator.git"
   },
   "bugs": {
-    "url": "https://github.com/mar-terminal/mbg-banner-generator/issues"
+    "url": "https://github.com/omaralhami/Mar-Banner-Generator/issues"
   },
   "engines": {
     "node": ">=14.0.0",
