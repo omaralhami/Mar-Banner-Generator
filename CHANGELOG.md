@@ -174,9 +174,8 @@ This enhanced version is brought to you by:
 
 ### 🔗 **Links**
 
-- **Discord Community**: [https://discord.gg/marx](https://discord.gg/marx)
-- **GitHub Repository**: [https://github.com/mar-terminal/banner-generator-pro](https://github.com/mar-terminal/banner-generator-pro)
-- **Live Demo**: [https://banner.d7y.dev](https://banner.d7y.dev)
+- **GitHub Repository**: [https://github.com/omaralhami/Mar-Banner-Generator](https://github.com/omaralhami/Mar-Banner-Generator)
+- **GitHub Repository**: [https://github.com/omaralhami/Mar-Banner-Generator](https://github.com/omaralhami/Mar-Banner-Generator)
 
 ---
 
@@ -199,4 +198,4 @@ This enhanced version is brought to you by:
 
 ---
 
-*Banner Generator Pro - Enhanced by Mar Terminal | [Discord](https://discord.gg/marx)* 
+*Banner Generator Pro - Maintained by omaralhami | [GitHub](https://github.com/omaralhami/Mar-Banner-Generator)* 

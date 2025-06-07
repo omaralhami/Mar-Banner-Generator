@@ -1,7 +1,7 @@
 /**
  * MBG Banner Generator - Modern JavaScript Application
- * Created by Mar - Mar Terminal
- * Discord: https://discord.gg/marx
+ * Maintained by: omaralhami
+ * GitHub: https://github.com/omaralhami/Mar-Banner-Generator
  * 
  * A comprehensive, modern web application for generating animated GIF banners
  * with advanced customization options and enhanced user experience.

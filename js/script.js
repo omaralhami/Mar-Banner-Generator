@@ -1,15 +1,15 @@
 
 /**
  * MBG Banner Generator - Legacy Compatibility Layer
- * Enhanced and improved by Mar - Mar Terminal
- * Discord: https://discord.gg/marx
+ * Maintained by: omaralhami
+ * GitHub: https://github.com/omaralhami/Mar-Banner-Generator
  * 
  * This file maintains backward compatibility with the original Banner Generator
  * while providing enhanced functionality. The new modern version is in app.js.
  */
 
-console.log('🎉 MBG Banner Generator loaded! Enhanced by Mar - Mar Terminal');
-console.log('💬 Join our Discord: https://discord.gg/marx');
+console.log('🎉 MBG Banner Generator loaded! Maintained by omaralhami');
+console.log('🔗 View on GitHub: https://github.com/omaralhami/Mar-Banner-Generator');
 
 // Enhanced font list with better organization
 var fontList = [
@@ -299,4 +299,4 @@ window.BannerGenerator = {
     fontList
 };
 
-console.log('✨ Enhanced by Mar - Join Mar Terminal: https://discord.gg/marx');
+console.log('✨ Maintained by omaralhami - View on GitHub: https://github.com/omaralhami/Mar-Banner-Generator');

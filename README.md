@@ -35,9 +35,9 @@
   - Comprehensive error handling
   - Performance monitoring
 
-## 🚀 Demo
+## 🚀 Usage
 
-Check out the live demo at [banner.d7y.dev](https://banner.d7y.dev) to see MBG Banner Generator in action.
+Download or clone the repository to use MBG Banner Generator locally.
 
 ## 🎯 How to Use
 
@@ -76,20 +76,19 @@ This project is open-source and available under the MIT License.
 
 ## 🙏 Credits
 
-**Developed and Enhanced by:** [Mar](https://discord.gg/marx)  
-**Community:** [Mar Terminal Discord Server](https://discord.gg/marx)
+**Maintained by:** [omaralhami](https://github.com/omaralhami)
 
-### Original Acknowledgements
+### Acknowledgements
 - Thanks to [jsgif](https://github.com/antimatter15/jsgif/tree/master) for GIF encoding
 - Thanks to [Osorina Irina](https://codepen.io/osorina) for background animation inspiration
 - Thanks to [uiverse.io](https://uiverse.io) for UI component inspiration
 
 ## 🌟 Show Your Support
 
-If you found this project helpful, please give it a ⭐ on GitHub and join our [Discord community](https://discord.gg/marx)!
+If you found this project helpful, please give it a ⭐ on GitHub!
 
 ---
 
 <p align="center">
-  Made with ❤️ by <strong>Mar</strong> | <a href="https://discord.gg/marx">Mar Terminal</a>
+  Made with ❤️ by <strong>omaralhami</strong>
 </p>
