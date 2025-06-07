@@ -6,7 +6,7 @@
   "scripts": {
     "start": "npx http-server . -p 3000 -c-1",
     "dev": "npx live-server --port=3000 --entry-file=index.html",
-    "build": "echo 'No build process needed for vanilla JavaScript'",
+    "build": "node -e \"const fs=require('fs');if(!fs.existsSync('public'))fs.mkdirSync('public');const files=['index.html','css','js','image','users.json'];files.forEach(f=>{if(fs.existsSync(f)){if(fs.lstatSync(f).isDirectory()){fs.cpSync(f,'public/'+f,{recursive:true})}else{fs.copyFileSync(f,'public/'+f)}}})\"",
     "lint": "npx eslint js/*.js",
     "format": "npx prettier --write *.html *.css js/*.js",
     "validate": "npx html-validate index.html",
