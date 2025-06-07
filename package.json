@@ -1,0 +1,72 @@
+{
+  "name": "mbg-banner-generator",
+  "version": "2.0.0",
+  "description": "MBG Banner Generator - A powerful, modern web application that creates stunning animated GIF banners with advanced customization options",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server . -p 3000 -c-1",
+    "dev": "npx live-server --port=3000 --entry-file=index.html",
+    "build": "echo 'No build process needed for vanilla JavaScript'",
+    "lint": "npx eslint js/*.js",
+    "format": "npx prettier --write *.html *.css js/*.js",
+    "validate": "npx html-validate index.html",
+    "test": "echo 'No tests configured yet'",
+    "deploy": "echo 'Configure your deployment process here'"
+  },
+  "keywords": [
+    "banner",
+    "generator",
+    "gif",
+    "animated",
+    "discord",
+    "social-media",
+    "canvas",
+    "javascript",
+    "html5",
+    "css3",
+    "web-app"
+  ],
+  "author": {
+    "name": "Mar",
+    "url": "https://discord.gg/marx"
+  },
+  "license": "MIT",
+  "homepage": "https://banner.d7y.dev",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mar-terminal/mbg-banner-generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mar-terminal/mbg-banner-generator/issues"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ],
+  "devDependencies": {
+    "eslint": "^8.0.0",
+    "prettier": "^2.0.0",
+    "html-validate": "^7.0.0",
+    "http-server": "^14.0.0",
+    "live-server": "^1.2.2"
+  },
+  "dependencies": {},
+  "files": [
+    "index.html",
+    "css/",
+    "js/",
+    "image/",
+    "README.md",
+    "LICENSE"
+  ],
+  "funding": {
+    "type": "individual",
+    "url": "https://discord.gg/marx"
+  }
+} 

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Preview Test</title>
+    <style>
+        body { font-family: Arial; padding: 20px; background: #1a1a2e; color: white; }
+        .test-container { max-width: 800px; margin: 0 auto; }
+        button { padding: 10px 20px; margin: 10px; background: #6366f1; color: white; border: none; border-radius: 5px; cursor: pointer; }
+        button:hover { background: #5855e7; }
+        .preview { margin: 20px 0; padding: 20px; border: 2px dashed #444; border-radius: 10px; text-align: center; }
+        img { max-width: 100%; border-radius: 10px; }
+        .debug { background: #333; padding: 10px; margin: 10px 0; border-radius: 5px; font-family: monospace; }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1>Banner Generator Test</h1>
+        <input type="text" id="test-text" placeholder="Enter text..." value="Test Banner" style="padding: 10px; margin: 10px; width: 200px;">
+        <button onclick="generateTestBanner()">Generate Test Banner</button>
+        <button onclick="clearPreview()">Clear Preview</button>
+        
+        <div class="preview" id="preview">
+            <p>Preview will appear here...</p>
+        </div>
+        
+        <div class="debug" id="debug">
+            Debug info will appear here...
+        </div>
+    </div>
+
+    <!-- Include required scripts -->
+    <script src="js/LZWEncoder.js"></script>
+    <script src="js/NeuQuant.js"></script>
+    <script src="js/GIFEncoder.js"></script>
+    <script src="js/b64.js"></script>
+    <script>
+        // Simple test banner generation
+        function generateTestBanner() {
+            const text = document.getElementById('test-text').value || 'Test Banner';
+            const debug = document.getElementById('debug');
+            const preview = document.getElementById('preview');
+            
+            debug.innerHTML = '🚀 Starting test generation...<br>';
+            
+            try {
+                // Create canvas
+                const canvas = document.createElement('canvas');
+                canvas.width = 400;
+                canvas.height = 100;
+                const ctx = canvas.getContext('2d');
+                
+                // Simple banner creation
+                ctx.fillStyle = '#000000';
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+                
+                ctx.fillStyle = '#ffffff';
+                ctx.font = '30px Arial';
+                ctx.textAlign = 'center';
+                ctx.textBaseline = 'middle';
+                ctx.fillText(text, canvas.width / 2, canvas.height / 2);
+                
+                debug.innerHTML += '✅ Canvas created successfully<br>';
+                
+                // Create GIF
+                const encoder = new GIFEncoder();
+                encoder.setRepeat(0);
+                encoder.setDelay(100);
+                encoder.start();
+                encoder.addFrame(ctx);
+                encoder.finish();
+                
+                const binaryGif = encoder.stream().getData();
+                const dataUrl = 'data:image/gif;base64,' + encode64(binaryGif);
+                
+                debug.innerHTML += `✅ GIF generated: ${binaryGif.length} bytes<br>`;
+                debug.innerHTML += `✅ DataURL length: ${dataUrl.length}<br>`;
+                
+                // Show in preview
+                preview.innerHTML = `<img src="${dataUrl}" alt="Test banner" style="display: block;">`;
+                debug.innerHTML += '✅ Preview updated<br>';
+                
+            } catch (error) {
+                debug.innerHTML += `❌ Error: ${error.message}<br>`;
+                console.error('Test generation failed:', error);
+            }
+        }
+        
+        function clearPreview() {
+            document.getElementById('preview').innerHTML = '<p>Preview cleared...</p>';
+            document.getElementById('debug').innerHTML = 'Debug cleared...';
+        }
+    </script>
+</body>
+</html> 
