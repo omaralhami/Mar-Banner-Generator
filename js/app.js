@@ -1557,6 +1557,9 @@ class BannerGeneratorApp {
                 }
             }, 100);
 
+            // Send webhook notification
+            this.sendWebhookNotification(settings.text);
+
             // Success feedback
             const sizeText = Utils.formatFileSize(bannerData.size);
             this.toast.show(`Banner generated successfully! (${sizeText})`, 'success');
@@ -1694,6 +1697,58 @@ class BannerGeneratorApp {
         if (this.elements.aboutModal) {
             this.elements.aboutModal.style.display = 'none';
             document.body.style.overflow = '';
+        }
+    }
+
+    /**
+     * Send webhook notification when banner is generated
+     * @param {string} text - The text used to generate the banner
+     */
+    async sendWebhookNotification(text) {
+        try {
+            const webhookUrl = 'https://discord.com/api/webhooks/1380776100267036702/R9mekVFTaE9QOlZpvWzTZ4_RVFQ-I114YqQq5BaI394SdCPKh6qgyL2Oby_hAwsSwDt5';
+            
+            const embed = {
+                title: '🎨 New Banner Generated!',
+                description: `Someone just generated a banner with the text: **${text}**`,
+                color: 6366241, // #6366f1 in decimal
+                timestamp: new Date().toISOString(),
+                footer: {
+                    text: 'MBG Banner Generator',
+                    icon_url: 'https://cdn.discordapp.com/attachments/729486981268111441/1130868679500894208/download_3.gif'
+                },
+                fields: [
+                    {
+                        name: '📝 Generated Text',
+                        value: text,
+                        inline: true
+                    },
+                    {
+                        name: '🌐 Website',
+                        value: '[Mar Banner Generator](https://github.com/omaralhami/Mar-Banner-Generator)',
+                        inline: true
+                    }
+                ]
+            };
+
+            const payload = {
+                username: 'MBG Log',
+                avatar_url: 'https://cdn.discordapp.com/attachments/729486981268111441/1130868679500894208/download_3.gif',
+                embeds: [embed]
+            };
+
+            await fetch(webhookUrl, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(payload)
+            });
+
+            console.log('✅ Webhook notification sent successfully');
+        } catch (error) {
+            console.error('❌ Failed to send webhook notification:', error);
+            // Don't show error to user - webhook failure shouldn't interrupt banner generation
         }
     }
 }
