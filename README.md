@@ -76,7 +76,7 @@ This project is open-source and available under the MIT License.
 
 ## 🙏 Credits
 
-**Maintained by:** [omaralhami](https://github.com/omaralhami)
+**Maintained by:** [mar](https://github.com/omaralhami)
 
 ### Acknowledgements
 - Thanks to [jsgif](https://github.com/antimatter15/jsgif/tree/master) for GIF encoding
@@ -90,5 +90,5 @@ If you found this project helpful, please give it a ⭐ on GitHub!
 ---
 
 <p align="center">
-  Made with ❤️ by <strong>omaralhami</strong>
+  Made with ❤️ by <strong>mar</strong>
 </p>

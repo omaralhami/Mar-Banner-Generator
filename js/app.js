@@ -1,6 +1,6 @@
 /**
  * MBG Banner Generator - Modern JavaScript Application
- * Maintained by: omaralhami
+ * Maintained by: mar
  * GitHub: https://github.com/omaralhami/Mar-Banner-Generator
  * 
  * A comprehensive, modern web application for generating animated GIF banners

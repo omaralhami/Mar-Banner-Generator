@@ -1,14 +1,14 @@
 
 /**
  * MBG Banner Generator - Legacy Compatibility Layer
- * Maintained by: omaralhami
+ * Maintained by: mar
  * GitHub: https://github.com/omaralhami/Mar-Banner-Generator
  * 
  * This file maintains backward compatibility with the original Banner Generator
  * while providing enhanced functionality. The new modern version is in app.js.
  */
 
-console.log('🎉 MBG Banner Generator loaded! Maintained by omaralhami');
+console.log('🎉 MBG Banner Generator loaded! Maintained by mar');
 console.log('🔗 View on GitHub: https://github.com/omaralhami/Mar-Banner-Generator');
 
 // Enhanced font list with better organization
@@ -299,4 +299,4 @@ window.BannerGenerator = {
     fontList
 };
 
-console.log('✨ Maintained by omaralhami - View on GitHub: https://github.com/omaralhami/Mar-Banner-Generator');
+console.log('✨ Maintained by mar - View on GitHub: https://github.com/omaralhami/Mar-Banner-Generator');

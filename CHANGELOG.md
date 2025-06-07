@@ -198,4 +198,4 @@ This enhanced version is brought to you by:
 
 ---
 
-*Banner Generator Pro - Maintained by omaralhami | [GitHub](https://github.com/omaralhami/Mar-Banner-Generator)* 
+*Banner Generator Pro - Maintained by mar | [GitHub](https://github.com/omaralhami/Mar-Banner-Generator)* 
