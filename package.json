@@ -27,8 +27,8 @@
     "web-app"
   ],
   "author": {
-    "name": "Mar",
-    "url": "https://discord.gg/marx"
+    "name": "omaralhami",
+    "url": "https://github.com/omaralhami"
   },
   "license": "MIT",
   "homepage": "https://banner.d7y.dev",
@@ -66,7 +66,7 @@
     "LICENSE"
   ],
   "funding": {
-    "type": "individual",
-    "url": "https://discord.gg/marx"
+    "type": "github",
+    "url": "https://github.com/omaralhami/Mar-Banner-Generator"
   }
 } 

@@ -51,10 +51,10 @@ Check out the live demo at [banner.d7y.dev](https://banner.d7y.dev) to see MBG B
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/mbg-banner-generator.git
+git clone https://github.com/omaralhami/Mar-Banner-Generator.git
 
 # Navigate to the project directory
-cd mbg-banner-generator
+cd Mar-Banner-Generator
 
 # Open in your browser
 # Simply open index.html in your preferred browser
