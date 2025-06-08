@@ -26,4 +26,10 @@ Type your text, pick your fonts/colors/effects, hit download done.
 ---
 
 
-<p align="center"> Made with ❤️ by mar • Join the <a href="https://discord.gg/marx">Mar Terminal community</a> </p> 
+<div align="center">
+
+Made with ❤️ by mar  
+> Built with curiosity, caffeine, and late nights.  
+Join the [Mar Terminal community](https://discord.gg/marx)
+
+</div>
