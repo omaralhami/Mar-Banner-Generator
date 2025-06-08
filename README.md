@@ -1,4 +1,4 @@
-# MBG Banner Generator
+# Mar Banner Generator
 
 I built this to help you whip up custom animated GIF banners in seconds, Just type your text, choose your style, and get a high-quality animated banner ready to use on Discord, social media, or wherever you want.
 
