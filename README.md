@@ -35,6 +35,43 @@
   - Comprehensive error handling
   - Performance monitoring
 
+- **🔔 Analytics & Notifications**
+  - Discord webhook integration
+  - Real-time generation tracking
+  - Usage analytics and monitoring
+  - Automatic notification system
+
+## 🔔 Webhook Integration
+
+This project includes Discord webhook notifications that alert you whenever someone generates a banner:
+
+### Features:
+- **Real-time Notifications**: Get instant Discord alerts when banners are generated
+- **Rich Embeds**: Beautiful formatted messages with user details
+- **Generated Text Tracking**: See exactly what text users are creating banners with
+- **Non-intrusive**: Webhook failures don't affect banner generation
+- **Privacy-focused**: Only tracks generated text, no personal user data
+
+### Webhook Payload Example:
+```json
+{
+  "username": "MBG Log",
+  "embeds": [{
+    "title": "🎨 New Banner Generated!",
+    "description": "Someone just generated a banner with the text: **Hello World**",
+    "color": 6366241,
+    "timestamp": "2024-01-01T12:00:00.000Z",
+    "fields": [
+      {
+        "name": "📝 Generated Text",
+        "value": "Hello World",
+        "inline": true
+      }
+    ]
+  }]
+}
+```
+
 ## 🚀 Usage
 
 Download or clone the repository to use MBG Banner Generator locally.
